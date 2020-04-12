@@ -1,1 +1,104 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-01-25T20:56:58-05:00</updated><id>/feed.xml</id><title type="html">Backnol Yogendran</title><subtitle>Backnol Blog</subtitle></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-04-12T11:14:34-04:00</updated><id>/feed.xml</id><title type="html">Backnol Yogendran</title><subtitle>Backnol Blog</subtitle><entry><title type="html">Data Driven Management</title><link href="/management/2020/04/11/data-driven-management.html" rel="alternate" type="text/html" title="Data Driven Management" /><published>2020-04-11T14:00:00-04:00</published><updated>2020-04-11T14:00:00-04:00</updated><id>/management/2020/04/11/data-driven-management</id><content type="html" xml:base="/management/2020/04/11/data-driven-management.html">&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#tactical-data&quot;&gt;Tactical Data&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#blocked-tickets&quot;&gt;Blocked tickets&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#stuck-tickets&quot;&gt;Stuck tickets&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#too-many-work-in-progresswip&quot;&gt;Too many Work in Progress(WIP)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#too-much-churn&quot;&gt;Too much churn&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#high-priority-production-defects&quot;&gt;High priority production defects&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#strategic&quot;&gt;Strategic&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#system-health-and-cost&quot;&gt;System health and cost&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#developer-productivity&quot;&gt;Developer productivity&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#architecture-health&quot;&gt;Architecture health&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#conclusion&quot;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;Four years ago, I embarked on my management career, managing a team of 5 software engineers. In addition to the management responsibilities, I was in the trenches with the engineers doing development, design reviews, code reviews and deployments. I knew all the details of the project at that stage of my growth.  Eventually, I grew to manage multiple teams. I managed my team leads, and they managed the engineers. I had to depend on data from tools and leads. It was a transition that I’ve anticipated. I went through multiple iterations with the help of my teams, colleagues and mentors to define the right set of data to measure. High-performance teams need very little intervention. As a manager, you have to intervene when your teams need your support. To know when to intervene, you need the right data. I’ve compiled a list of data and metrics that I use to best support my teams.&lt;/p&gt;
+
+&lt;p&gt;I’ve categorized the data into two, tactical and strategic. I’ve listed the metrics and action items that you need to perform to support your team. JIRA, CodeClimate and Pluralsight Flow are the tools that I use to collect my data.&lt;/p&gt;
+
+&lt;h1 id=&quot;tactical-data&quot;&gt;Tactical Data&lt;/h1&gt;
+
+&lt;p&gt;Tactical data helps you identify items that need your immediate attention. You probably should chat with the individuals involved as soon as possible to resolve the matter.&lt;/p&gt;
+
+&lt;h2 id=&quot;blocked-tickets&quot;&gt;Blocked tickets&lt;/h2&gt;
+
+&lt;p&gt;Tickets that a blocked due to internal or external dependencies.
+You probably want to give your team a chance to resolve the blockers in a timeboxed limit. Often the teams resolve the internal dependencies faster than the external dependencies. Not all blockers are the same, so you should help your team identify the external/internal dependencies and coach them to resolve the dependencies themselves. As a leader who has a broader network in the organization, you may have more context into the matter to help your team by providing background and connecting with specific individuals to be unblocked. You have to train your team to resolve similar dependencies themselves in the future.&lt;/p&gt;
+
+&lt;h2 id=&quot;stuck-tickets&quot;&gt;Stuck tickets&lt;/h2&gt;
+
+&lt;p&gt;Tickets that are taking longer to complete than initially estimated. Someone is trying hard to complete the work but delayed. Most likely, due to unidentified dependencies and risks. You can derisk by:
+Adding extra resources
+Reducing scope without compromise to business
+Removing blockers&lt;/p&gt;
+
+&lt;h2 id=&quot;too-many-work-in-progresswip&quot;&gt;Too many Work in Progress(WIP)&lt;/h2&gt;
+
+&lt;p&gt;Tickets that are in progress exceeds the total number of developers in your team. Developers are working on parallel items may be due to randomization. Parallelizing work is expensive due to the context switching. Parallelization results in slow progress neglected work and missed blindspots. Ensure that your teams are working on one item at a time to increase maximum performance.&lt;/p&gt;
+
+&lt;h2 id=&quot;too-much-churn&quot;&gt;Too much churn&lt;/h2&gt;
+
+&lt;p&gt;Tickets are moving back and forth between testing, code review and development multiple times. You should identify the root cause by identifying the following:
+Technical debt
+Missing requirements
+Communication issues
+Lack of context&lt;/p&gt;
+
+&lt;h2 id=&quot;high-priority-production-defects&quot;&gt;High priority production defects&lt;/h2&gt;
+
+&lt;p&gt;Production defects are defects with financial impacts or business impediments. Such tickets are most significant that you must provide all the support you can to the team. Keep track of these defects with timely updates from the team. Cancel your meetings if you need to support your team. Book a meeting room or start a video conference for your team to swarm and solve&lt;/p&gt;
+
+&lt;h1 id=&quot;strategic&quot;&gt;Strategic&lt;/h1&gt;
+
+&lt;p&gt;Strategic data helps you identify items that have long term impact. Strategic data helps you identify patterns in your team and the organization that may be impacting the business in the long run. You don’t have to accept your current state as the norm but challenge the status quo and keep pushing for efficiency with the least amount of churn. Perfection is an ongoing journey, not a state.&lt;/p&gt;
+
+&lt;h2 id=&quot;system-health-and-cost&quot;&gt;System health and cost&lt;/h2&gt;
+
+&lt;p&gt;System health is a measure of our customer experience and costs consciousness. Short response time and low errors showcase the quality of our end users and our lean expense. You can measure the response time and errors and calculate the savings. It is best if the system health and cost are visible to everyone in the organization as a scorecard. Visible data encourages collabroation and promotes engineers to come up with their plan.  Execute the plan in phases without any impact to the business. Following metrics is a good starting point:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Response time&lt;/li&gt;
+  &lt;li&gt;CPU usage&lt;/li&gt;
+  &lt;li&gt;Memory usage&lt;/li&gt;
+  &lt;li&gt;Number of server instances&lt;/li&gt;
+  &lt;li&gt;Errors/Crashes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;developer-productivity&quot;&gt;Developer productivity&lt;/h2&gt;
+
+&lt;p&gt;Tools like Pluralsight Flow provides metrics and dashboards that you can easily measure the productivity of your team in comparison to industry standards. If you do not have access to those tools, you can still measure productivity through Git commands or Github, through automated or manual data collection. I use the following data to identify where my team needs help:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Code review duration&lt;/li&gt;
+  &lt;li&gt;Churn on a code review&lt;/li&gt;
+  &lt;li&gt;Code review contribution/collaboration&lt;/li&gt;
+  &lt;li&gt;Days per week that developers commit code&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You should coach your team on the value of collaboration and reduced time to get features out the door. You may have to work with the team or the individuals to steer them in the direction to increase productivity.&lt;/p&gt;
+
+&lt;h2 id=&quot;architecture-health&quot;&gt;Architecture health&lt;/h2&gt;
+
+&lt;p&gt;I measure architecture health by measuring how fast we can get a feature out and how long can we keep adding new code without coming to a halt. In a well-architectured application, the developer can add a new feature and take risks without defects in the shortest amount of time possible.  Following metrics help you measure architecture health&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Lead time to ship changes&lt;/li&gt;
+  &lt;li&gt;Churn on specific files or modules&lt;/li&gt;
+  &lt;li&gt;Code coverage&lt;/li&gt;
+  &lt;li&gt;Maintainability(Duplication, function/file length, Coding standards)&lt;/li&gt;
+  &lt;li&gt;Reproducibility of production defects in local environments&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You must refactor, add tests and reduce complexity in our code to allow the developers to work without any impediments.&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;Keep in mind that people do actions with best intentions, but the results may vary. Using data, you can keep your team aligned to yield the best results. Be a great manager by stepping in when you have to and let your engineers do their job without interruptions. If the data does not reflect reality, then revisit and change how and what you measure. As an experienced leader, you must determine when you should stop improving as certain improvements may result in diminishing returns.&lt;/p&gt;</content><author><name></name></author><summary type="html">Introduction Tactical Data Blocked tickets Stuck tickets Too many Work in Progress(WIP) Too much churn High priority production defects Strategic System health and cost Developer productivity Architecture health Conclusion</summary></entry></feed>
