@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300|Raleway:400,700" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<title>Tech Debt Cleanup. Shortest Line First</title>
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Tech Debt Cleanup. Shortest Line First | Backnol Yogendran</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Tech Debt Cleanup. Shortest Line First" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="It is challenging to choose the right tech debt to fix. My technical mind thinks that I should tackle the most challenging problems first. But my business mind makes me believe that I should focus on tech debts with the highest return of investment. Refactoring the most challenging, complex and problematic code would give us the highest return on the investment. However, tackling the most complex problem first consumes a lot of time. The longer we take to solve a problem, the longer the other problems are neglected. We need to choose our battles wisely" />
+<meta property="og:description" content="It is challenging to choose the right tech debt to fix. My technical mind thinks that I should tackle the most challenging problems first. But my business mind makes me believe that I should focus on tech debts with the highest return of investment. Refactoring the most challenging, complex and problematic code would give us the highest return on the investment. However, tackling the most complex problem first consumes a lot of time. The longer we take to solve a problem, the longer the other problems are neglected. We need to choose our battles wisely" />
+<link rel="canonical" href="/software/2021/02/09/tech-debt-cleanup.html" />
+<meta property="og:url" content="/software/2021/02/09/tech-debt-cleanup.html" />
+<meta property="og:site_name" content="Backnol Yogendran" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-02-09T07:30:00-05:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","headline":"Tech Debt Cleanup. Shortest Line First","dateModified":"2021-02-09T07:30:00-05:00","datePublished":"2021-02-09T07:30:00-05:00","url":"/software/2021/02/09/tech-debt-cleanup.html","mainEntityOfPage":{"@type":"WebPage","@id":"/software/2021/02/09/tech-debt-cleanup.html"},"description":"It is challenging to choose the right tech debt to fix. My technical mind thinks that I should tackle the most challenging problems first. But my business mind makes me believe that I should focus on tech debts with the highest return of investment. Refactoring the most challenging, complex and problematic code would give us the highest return on the investment. However, tackling the most complex problem first consumes a lot of time. The longer we take to solve a problem, the longer the other problems are neglected. We need to choose our battles wisely","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+</head>
+  <body>
+    <main class="container">
+      <section class="about">
+        <a href="/"><img src="/assets/portfolio.png" alt="Backnol Yogendran"></a>
+        <h2 id="title">
+          <a href="/">Backnol Yogendran</a>
+        </h2>
+        <p class="tagline">Leading Software Engineering Teams</p>
+        <ul class="social"><a href="https://github.com/backnol">
+              <li>
+                <i class="icon-github-circled"></i>
+              </li>
+            </a><a href="https://www.linkedin.com/in/backnol">
+              <li>
+                <i class="icon-linkedin-squared"></i>
+              </li>
+            </a><a href="https://twitter.com/backnol">
+              <li>
+                <i class="icon-twitter-squared"></i>
+              </li>
+            </a></ul><p>&copy;
+          2021</p>
+      </section>
+      <section class="content">
+        <div class="post-container">
+  <a class="post-link" href="/software/2021/02/09/tech-debt-cleanup.html">
+    <h2 class="post-title">Tech Debt Cleanup. Shortest Line First</h2>
+  </a>
+  <div class="post-meta">
+    <ul class="post-categories"><li>software</li></ul>
+    <div class="post-date"><i class="icon-calendar"></i>Feb 9, 2021</div>
+  </div>
+  <div class="post">
+    <p>It is challenging to choose the right tech debt to fix. My technical mind thinks that I should tackle the most challenging problems first.  But my business mind makes me believe that I should focus on tech debts with the highest return of investment. Refactoring the most challenging, complex and problematic code would give us the highest return on the investment. However, tackling the most complex problem first consumes a lot of time. The longer we take to solve a problem, the longer the other problems are neglected. We need to choose our battles wisely</p>
+
+<p>I am going to put tech debts in two buckets:
+Complex: Takes months to a year to ship with a high risk of customer disruption. i.e Break into microservices
+Simple: Takes a few weeks to ship with a low risk of customer disruption. i.e Refactor a class/function</p>
+
+<p>| |Less time|More time
+— | — | —
+High-risk customer disruption | | Complex<br />
+Low-risk customer disruption |Simple| |
+<br />
+The investment returned on cleaning the Simple Tech Debt may be small, but you reap the rewards fast in small increments.</p>
+
+<p>Following are a few examples of fixing Simple Tech Debts:</p>
+<ul>
+  <li>Use standard/popular libraries that can replace custom code</li>
+  <li>Use newer language features to reduce LOC and increase readability.</li>
+  <li>Upgrade libraries to take for better reliability and productivity</li>
+  <li>Improve telemetry and tracking</li>
+  <li>Using better design patterns based on best industry practices</li>
+</ul>
+
+<p>Solving simple Simple Tech Debts have the following benefits:</p>
+<ul>
+  <li>Quick return of investment</li>
+  <li>Less to no disruption to business</li>
+  <li>Increases clarity of the source code, resulting in a better understanding of the system</li>
+  <li>Prepares engineers to take on the Complex Tech Debts in the future</li>
+</ul>
+
+<p>When you are cleaning tech debts and you don’t know where to begin, take the shortest path first. Also, don’t neglect the Complex Tech Debts for too long.</p>
+
+
+  </div></div>
+
+      </section>
+    </main></body>
+</html>

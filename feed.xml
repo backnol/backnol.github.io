@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-04-12T16:42:21-04:00</updated><id>/feed.xml</id><title type="html">Backnol Yogendran</title><subtitle>Backnol Blog</subtitle><entry><title type="html">Data Driven Management</title><link href="/management/2020/04/11/data-driven-management.html" rel="alternate" type="text/html" title="Data Driven Management" /><published>2020-04-11T14:00:00-04:00</published><updated>2020-04-11T14:00:00-04:00</updated><id>/management/2020/04/11/data-driven-management</id><content type="html" xml:base="/management/2020/04/11/data-driven-management.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-09T09:13:50-05:00</updated><id>/feed.xml</id><title type="html">Backnol Yogendran</title><subtitle>Backnol Blog</subtitle><entry><title type="html">Tech Debt Cleanup. Shortest Line First</title><link href="/software/2021/02/09/tech-debt-cleanup.html" rel="alternate" type="text/html" title="Tech Debt Cleanup. Shortest Line First" /><published>2021-02-09T07:30:00-05:00</published><updated>2021-02-09T07:30:00-05:00</updated><id>/software/2021/02/09/tech-debt-cleanup</id><content type="html" xml:base="/software/2021/02/09/tech-debt-cleanup.html">&lt;p&gt;It is challenging to choose the right tech debt to fix. My technical mind thinks that I should tackle the most challenging problems first.  But my business mind makes me believe that I should focus on tech debts with the highest return of investment. Refactoring the most challenging, complex and problematic code would give us the highest return on the investment. However, tackling the most complex problem first consumes a lot of time. The longer we take to solve a problem, the longer the other problems are neglected. We need to choose our battles wisely&lt;/p&gt;
+
+&lt;p&gt;I am going to put tech debts in two buckets:
+Complex: Takes months to a year to ship with a high risk of customer disruption. i.e Break into microservices
+Simple: Takes a few weeks to ship with a low risk of customer disruption. i.e Refactor a class/function&lt;/p&gt;
+
+&lt;p&gt;| |Less time|More time
+— | — | —
+High-risk customer disruption | | Complex&lt;br /&gt;
+Low-risk customer disruption |Simple| |
+&lt;br /&gt;
+The investment returned on cleaning the Simple Tech Debt may be small, but you reap the rewards fast in small increments.&lt;/p&gt;
+
+&lt;p&gt;Following are a few examples of fixing Simple Tech Debts:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Use standard/popular libraries that can replace custom code&lt;/li&gt;
+  &lt;li&gt;Use newer language features to reduce LOC and increase readability.&lt;/li&gt;
+  &lt;li&gt;Upgrade libraries to take for better reliability and productivity&lt;/li&gt;
+  &lt;li&gt;Improve telemetry and tracking&lt;/li&gt;
+  &lt;li&gt;Using better design patterns based on best industry practices&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Solving simple Simple Tech Debts have the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Quick return of investment&lt;/li&gt;
+  &lt;li&gt;Less to no disruption to business&lt;/li&gt;
+  &lt;li&gt;Increases clarity of the source code, resulting in a better understanding of the system&lt;/li&gt;
+  &lt;li&gt;Prepares engineers to take on the Complex Tech Debts in the future&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;When you are cleaning tech debts and you don’t know where to begin, take the shortest path first. Also, don’t neglect the Complex Tech Debts for too long.&lt;/p&gt;</content><author><name></name></author><summary type="html">It is challenging to choose the right tech debt to fix. My technical mind thinks that I should tackle the most challenging problems first. But my business mind makes me believe that I should focus on tech debts with the highest return of investment. Refactoring the most challenging, complex and problematic code would give us the highest return on the investment. However, tackling the most complex problem first consumes a lot of time. The longer we take to solve a problem, the longer the other problems are neglected. We need to choose our battles wisely</summary></entry><entry><title type="html">Data Driven Management</title><link href="/management/2020/04/11/data-driven-management.html" rel="alternate" type="text/html" title="Data Driven Management" /><published>2020-04-11T14:00:00-04:00</published><updated>2020-04-11T14:00:00-04:00</updated><id>/management/2020/04/11/data-driven-management</id><content type="html" xml:base="/management/2020/04/11/data-driven-management.html">&lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#tactical-data&quot;&gt;Tactical Data&lt;/a&gt;
     &lt;ul&gt;
